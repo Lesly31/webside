@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu con acceso a paginas</title>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#roja').click(function(){
+				$("#contenido").load("roja.html");
+										});
+										
+			$('#verde').click(function(){
+				$("#contenido").load("verde.html");
+										});
+										
+			$('#amarilla').click(function(){
+				$("#contenido").load("amarilla.html");
+										});
+									});
+	</script>
+	
+	</head>
+	<body>
+	
+			<a href="#" id="roja">roja</a>
+			<a href="#" id="verde">verde</a>
+			<a href="#" id="amarilla">amarilla</a>
+				<br>
+				<div id="contenido">
+				
+				</div>
+	</body>
+	</html>
